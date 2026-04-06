@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <title>Contact Purrfect Vibes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="contact-page">
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a>
+                        <ul class="sub-menu">
+                            <li><a href="features.html#cat-care">Cat Care</a></li>
+                            <li><a href="features.html#quizzes">Quizzes</a></li>
+                            <li><a href="features.html#community">Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="button">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="navToggler" class="navTogglerMenu" name="navToggler">
+                <img src="images/menu.svg" class="menuOpen" alt="menu">
+                <img src="images/x.svg" class="menuClose" alt="close">
+            </label>
+        </div>
+    </header>
+
+    <main class="contact-section container">
+        <h2>Contact Us</h2>
+
+        <div class="contact-layout">
+            <address>
+                Purrfect Vibes HQ<br>
+                123 Whisker Lane<br>
+                Meowtown, CA 90210<br>
+                (555) 867-5309
+            </address>
+
+            <form id="contactForm" novalidate>
+                <p class="form-note">Note: Fields highlighted in red are required.</p>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First Name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last Name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">Organization (if any):</label>
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            placeholder="Optional"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="555-555-5555"
+                            required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        >
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@domain.com"
+                            required
+                            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                        >
+                    </div>
+                </div>
+
+                <div class="choice-grid">
+                    <fieldset>
+                        <legend>Feline Interests:</legend>
+                        <label><input type="checkbox" name="interests" value="Cat Wellness"> Cat Wellness</label>
+                        <label><input type="checkbox" name="interests" value="Cat Training"> Cat Training</label>
+                        <label><input type="checkbox" name="interests" value="Cat Adoption"> Cat Adoption</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Cat's Lifestyle:</legend>
+                        <label><input type="radio" name="lifestyle" value="Indoor Cat"> Indoor Cat</label>
+                        <label><input type="radio" name="lifestyle" value="Outdoor Cat"> Outdoor Cat</label>
+                        <label><input type="radio" name="lifestyle" value="Both"> Both</label>
+                    </fieldset>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="cats">How many cats do you have?</label>
+                    <select id="cats" name="cats">
+                        <option value="None">None</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="hearAbout">How did you hear about Purrfect Vibes?</label>
+                    <select id="hearAbout" name="hearAbout" multiple>
+                        <option>Social Media</option>
+                        <option>Friend/Family</option>
+                        <option>Google Search</option>
+                        <option>Online Ad</option>
+                        <option>Community Event</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="questions">Questions or Purrs?</label>
+                    <textarea id="questions" name="questions" rows="4" placeholder="Share your thoughts with us!"></textarea>
+                </div>
+
+                <input type="submit" value="Submit to Purrfect Vibes">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+        </div>
+        <p>
+            Contact Us<br>
+            Purrfect Vibes<br>
+            123 Whisker Lane<br>
+            Catopia City, CA 90210<br>
+            Tel. (800) PURR-VIBES (800-787-7842)<br>
+        </p>
+    </footer>
+</body>
+</html>
